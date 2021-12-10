@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/fonts";
+
+@import "./components/btn";
+
+@import "./layouts/header";
+@import "./layouts/banner";
+@import "./layouts/footer";
+@import "./layouts/form";
+@import "./layouts/carousel";
+
+@import "./pages/section-prestations";
+@import "./pages/section-locaux";
+@import "./pages/section-profil";
+@import "./pages/section-contact";
+@import "./pages/section-avis";
+@import "./pages/section-faq";

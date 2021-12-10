@@ -1,0 +1,84 @@
+.section-contact {
+    width: 94%;
+    padding: 0 3% 3% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem 0 0 0;
+    &__title {
+        @include title-mods(section);
+        @include mobile-only {
+            font-size: 2rem;
+            justify-content: space-between;
+            gap: 0;
+        }
+        &::after {
+            margin: 0 0 0 2rem;
+            display: inline-block;
+            content: "";
+            width: 50%;
+            height: 2px;
+            background-color: $color-tertiary;
+            border-radius: 1rem;
+            @include mobile-only {
+                width: 0;
+            }
+            @include tablet-only {
+                width: 30%;
+            }
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 3rem 0 0 0;
+        @include mobile-only {
+            gap: 3rem;
+            margin: 0;
+        }
+        @include tablet-only {
+            gap: 3rem;
+        }
+    }
+}
+
+.present-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+    gap: 2rem;
+    &__noel {
+        display: none;
+        width: 45%;
+        @include mobile-only {
+            width: 100%;
+        }
+        @include tablet-only {
+            width: 85%;
+        }
+        & img {
+            width: 100%;
+            border-radius: .5rem;
+        }
+    }
+    &__present {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 45%;
+        gap: 2rem;
+        @include mobile-only {
+            width: 100%;
+        }
+        @include tablet-only {
+            width: 85%;
+        }
+        & img {
+            width: 100%;
+            border-radius: .5rem;
+        }
+    }
+}

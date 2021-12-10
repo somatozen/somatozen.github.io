@@ -1,0 +1,44 @@
+.section-locaux {
+    width: 94%;
+    padding: 3%;
+    &__title {
+        @include title-mods(section);
+        @include mobile-only {
+            font-size: 2rem;
+            gap: 0;
+        }
+        &::after {
+            margin: 0 0 0 2rem;
+            display: inline-block;
+            content: "";
+            width: 50%;
+            height: 2px;
+            background-color: $color-tertiary;
+            border-radius: 1rem;
+            @include mobile-only {
+                width: 0;
+            }
+            @include tablet-only {
+                width: 30%;
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0 0 0;
+        gap: 2rem;
+        & p {
+            width: 60%;
+            @include mobile-only {
+                width: 95%;
+            }
+            @include tablet-only {
+                width: 80%;
+            }
+        }
+    }
+}

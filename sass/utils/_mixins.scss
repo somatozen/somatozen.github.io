@@ -1,0 +1,45 @@
+@mixin mobile-only {
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media screen and (min-width: 600px) and (max-width: 999px){
+        @content;
+    }
+}
+
+@mixin btn-mods($mods) {
+    @each $style, $mod in $mods {
+        &--#{$style} {
+            width: map-get($mod, width);
+            height: map-get($mod, height);
+            display: map-get($mod, display);
+            justify-content: map-get($mod, justify-content);
+            align-items: map-get($mod, align-items);
+            text-decoration: map-get($mod, text-decoration);
+            border: map-get($mod, bd);
+            position: map-get($mod, position);
+            color: map-get($mod, colour);
+            background-color: map-get($mod, bg);
+            border-radius: map-get($mod, bd-rad);
+            font-weight: map-get($mod, font-weight);
+            box-shadow: map-get($mod, bx-shadow);
+        }
+    }
+}
+
+@mixin title-mods($title-style) {
+    $style: map-get($title-mods, $title-style);
+    width: map-get($style, width);
+    display: map-get($style, display);
+    justify-content: map-get($style, justify-content);
+    align-items: map-get($style, align-items);
+    text-align: map-get($style, text-align);
+    gap: map-get($style, gap);
+    margin: map-get($style, margin);
+    font-family: map-get($style, font-family), cursive;
+    font-size: map-get($style, font-size);
+    color: map-get($style, colour);
+}

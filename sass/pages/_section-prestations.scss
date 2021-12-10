@@ -1,0 +1,87 @@
+.section-prestations {
+    width: 94%;
+    padding: 0 3% 3% 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3rem 0 0 0;
+    &__title {
+        @include title-mods(section);
+        @include mobile-only {
+            font-size: 2rem;
+            gap: 0;
+        }
+        &::after {
+            margin: 0 0 0 2rem;
+            display: inline-block;
+            content: "";
+            width: 50%;
+            height: 2px;
+            background-color: $color-tertiary;
+            border-radius: 1rem;
+            @include mobile-only {
+                width: 0;
+            }
+            @include tablet-only {
+                width: 30%;
+            }
+        }
+    }
+    &__text {
+        font-style: oblique;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include mobile-only {
+            gap: 3rem;
+        }
+    }
+}
+
+.card {
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include mobile-only {
+        width: 100%;
+        flex-direction: column;
+    }
+    &__img {
+        width: 45%;
+        height: 20rem;
+        object-fit: contain;
+        @include mobile-only {
+            width: 85%;
+            height: 10rem;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        color: $color-text;
+        width: 55%;
+        height: auto;
+        padding: 2%;
+        align-self: flex-start;
+        @include mobile-only {
+            width: 95%;
+            align-items: center;
+        }
+    }
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+    @include mobile-only {
+        flex-direction: column;
+    }
+}
+
+.content-info {
+    font-weight: bold;
+}

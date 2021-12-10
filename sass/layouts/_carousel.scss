@@ -1,0 +1,49 @@
+.carousel {
+    width: 50%;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    @include mobile-only {
+        width: 100%;
+        height: 50vh;
+    }
+    @include tablet-only {
+        width: 85%;
+        height: 75vh;
+    }
+    &__content {
+        width: 329vw;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        @include mobile-only {
+            width: 657vw;
+        }
+        @include tablet-only {
+            width: 559vw;
+        }
+        & img {
+            width: 14.2857%;
+            height: 100%;
+        }
+    }
+    &__btn {
+        opacity: 0.7;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+            opacity: .9;
+            transform: scale(1.1);
+        }
+    }
+    &__btn-previous {
+        left: 2%;
+    }
+    &__btn-next {
+        right: 2%;
+    }
+}
+
