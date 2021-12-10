@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Somatozen - Prendre un rendez vous</title>
+        <meta name="description" content="Besoin d'un rendez vous ou d'un renseignement ? Alors n'hésitez pas à prendre contact, par téléphone au 0783780137, par mail à somatozen@gmail.com, avec la praticienne Gisèle Nicoletti">
+        <script src="./index.js" async></script>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" /> 
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "MedicalBusiness",
+              "name": "Somatozen",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rue des noyers",
+                "addressLocality": "Mont de Marsan",
+                "addressRegion": "Nouvelle-Aquitaine",
+                "postalCode": "40000",
+                "addressCountry": "FR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 43.896978,
+                "longitude": -0.504021
+              },
+              "url": "http://www.somatozen.github.io",
+              "telephone": "0783780137",
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ],
+                  "opens": "09:30",
+                  "closes": "19:30"
+                }
+              ]
+            }
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__img" title="Retour à l'accueil"><img src="./img/logo.webp" alt="Le logo du cabinet Somatozen"></a>
+            <nav class="header__nav">
+                <a class="btn__nav btn--nav" title="Prestations" href="./index.html#prestations">Prestations</a>
+                <a class="btn__nav btn--nav" title="Thérapeute" href="./index.html#profil">Thérapeute</a>
+                <a class="btn__nav btn--nav" title="Contact" href="#me-contacter">Contact</a>
+            </nav>
+        </header>
+        <div class="banner">
+            <h1 class="banner__title">J'ai décidé d'être heureux parce que c'est bon pour la santé - Voltaire</h1>
+            <img class="banner__img" src="./img/bannièreV1.png" alt="Etendue d'eau avec des galets alignés">
+        </div>
+        <main class="contact-content">
+            <button id="scroll-btn" class="btn__scroll btn--scroll" title="Haut de la page">&#11014;</button>
+            <section id="me-contacter" class="section-contact">
+                <h2 class="section-contact__title">Me contacter</h2>
+                <div class="section-contact__content">
+                    <form id="contact-form" class="contact-content__form">
+                        <div class="">
+                            <label for="user_name">
+                                Nom
+                            </label>
+                            <input id="user_name" class="" placeholder="Ex : Nicoletti" title="Veuillez respecter l'exemple svp" minlength="2" maxlength="30" required />
+                            <span id="user_name_valid" class="valid-icon">	
+                                &#10003;
+                            </span>
+                            <p id="user-name-error-message">
+                                Le nom ne peut contenir que des lettres majuscules, minuscules et le caractère ( - ) 
+                            </p>
+                        </div>
+                        <div class="">
+                            <label for="user_first-name">
+                                Prenom
+                            </label>
+                            <input id="user_first-name" class="" placeholder="Ex : Gisèle" minlength="2" maxlength="30" required />
+                            <span id="user_first-name_valid" class="valid-icon">	
+                                &#10003;
+                            </span>
+                            <p id="user-first-name-error-message">
+                                Le Prénom ne peut contenir que des lettres majuscules, minuscules et le caractère ( - ) 
+                            </p>
+                        </div>
+                        <div class="">
+                            <label for="user_email">
+                                Adresse email
+                            </label>
+                            <input id="user_email" class="" type="email" placeholder="Ex : somatozen@gmail.fr" minlength="6" maxlength="50" required />
+                            <span id="user_email_valid" class="valid-icon">	
+                                &#10003;
+                            </span>
+                            <p id="user-email-error-message">
+                                L'adresse email ne peut contenir que des lettres majuscules, minuscules, des chiffres et les caractères ( -  _  . )
+                            </p>
+                        </div>
+                        <div class="">
+                            <label for="user_tel" >
+                                Téléphone
+                            </label>
+                            <input id="user_tel" class="" required placeholder="Ex : 0783780137" minlength="10" maxlength="13" type="tel" />
+                            <span id="user_tel_valid" class="valid-icon">	
+                                &#10003;
+                            </span>
+                            <p id="user-tel-error-message">
+                                Le téléphone ne peut contenir que des chiffres
+                            </p>
+                        </div>
+                        <div class="">
+                            <label for="user_object">
+                                Objet
+                            </label>
+                            <input id="user_object" class="" required placeholder="Ex : Médecine chioise" minlength="2" maxlength="50" type="text" />
+                            <span id="user_object_valid" class="valid-icon">	
+                                &#10003;
+                            </span>
+                            <p id="user-object-error-message">
+                                L'objet ne peut contenir que des lettres majuscules, minuscules ainsi que des espaces
+                            </p>
+                        </div>
+                        <div class="">
+                            <label for="user_message">
+                                Détail de votre demande
+                            </label>
+                            <textarea id="user_message" class="" rows="4" cols="50" maxlength="500" placeholder="Votre demande"></textarea>
+                            <span id="user_message_valid" class="valid-icon">	
+                                &#10003;
+                            </span>
+                            <p id="user-message-error-message">
+                                Le message ne peut contenir que des lettres majuscules, minuscules, des chiffres, des espaces et les caractères ( -  .  '  ? , ! )
+                            </p>
+                        </div> 
+                        <p class="section-prestations__text">Important: L'appui sur le bouton "envoyer" va ouvrir votre messagerie avec un mail pré rempli des informations renseignées dans le formulaire</p>
+                        <button id="send-btn" form="contact-form" class="btn--main btn__main" type="button" disabled>
+                            Envoyer
+                        </button>
+                    </form>
+                    <div class="contact-content__img">
+                        <img src="./img/cabinet.jpeg" alt="Photo des locaux">
+                        <img src="./img/plan.webp" alt="Plan pour situer le cabinet">
+                    </div>
+                    <address class="contact-content__address">
+                        Rue des noyers <br>
+                        40000 Mont de Marsan <br>
+                        Tel : <a href="tel:0783780137">0783780137</a><br>
+                        Email : <a href="mailto:somatozen@gmail.com">somatozen@gmail.com</a><br>
+                        Me contacter sur <a href="https://fr-fr.facebook.com/pages/category/Acupuncturist/Cabinet-Somatozen-Gis%C3%A8le-Nicoletti-214626969063825/">Facebook</a> 
+                    </address>
+                    <p class="contact-content__info">
+                        Ouvert du lundi au samedi de 9h30 à 19h30  (dernier RDV à 18h30) <br>
+                        Règlement uniquement par CHÈQUE ou ESPÈCES. <br>
+                        Je peux vous délivrer une facture. <br>
+                        Certaines mutuelles remboursent les séances de Shiatsu et de thérapie brève, n’hésitez par à vous renseigner auprès de votre mutuelle <br>
+                        Je suis titulaire d'une assurance de Responsabilité Civile Professionnelle. <br>
+                        Toute séance non annulée 48 heures à l'avance sera due. <br>
+                    </p>
+                </div>
+            </section>
+            <section class="section-contact">
+                <h2 class="section-contact__title">Plaisir d'offrir</h2>
+                <div class="section-contact__content">
+                    <div class="present-content">
+                        <div id="noel-content" class="present-content__noel">
+                            <img src="./img/bon-cadeau-noel.webp" alt="Un bon cadeau pour noel">
+                        </div>
+                        <div class="present-content__present">
+                            <img src="./img/bon-cadeau03.webp" alt="Un bon cadeau à offrir">
+                            <img src="./img/bon-cadeau01.webp" alt="Un bon cadeau à offrir">
+                            <img src="./img/bon-cadeau02.webp" alt="Un bon cadeau à offrir">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li><a class="btn--footer btn__main" href="./avis-patients.html">Avis patients</a></li>
+                <li><a class="btn--footer btn__main" href="./foire-aux-questions.html">FAQ</a></li>
+                <li><a class="btn--footer btn__main" href="https://fr-fr.facebook.com/pages/category/Acupuncturist/Cabinet-Somatozen-Gis%C3%A8le-Nicoletti-214626969063825/">Facebook</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

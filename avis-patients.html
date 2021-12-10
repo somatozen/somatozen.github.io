@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Somatozen - avis des patients</title>
+        <meta name="description" content="Consultez les avis des patients du cabinet Somatozen de Mont de Marsan (40)">
+        <script src="./index.js" async></script>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" /> 
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__img" title="Retour à l'accueil"><img src="./img/logo.webp" alt="Le logo du cabinet Somatozen"></a>
+            <nav class="header__nav">
+                <a class="btn__nav btn--nav" title="Prestations" href="./index.html#prestations">Prestations</a>
+                <a class="btn__nav btn--nav" title="Thérapeute" href="./index.html#profil">Thérapeute</a>
+                <a class="btn__nav btn--nav" title="Contact" href="contact.html#me-contacter">Contact</a>
+            </nav>
+        </header>
+        <div class="banner">
+            <h1 class="banner__title">J'ai décidé d'être heureux parce que c'est bon pour la santé - Voltaire</h1>
+            <img class="banner__img" src="./img/bannièreV1.png" alt="Etendue d'eau avec des galets alignés">
+        </div>
+        <main class="avis-main">
+            <button id="scroll-btn" class="btn__scroll btn--scroll" title="Haut de la page">&#11014;</button>
+            <section class="section-avis">
+                <h2 class="section-avis__title">Avis des patients</h2>
+                <div class="section-avis__content">
+                    <div class="avis-card">
+                        <img src="./img/avis01.webp" alt="Fleurs exotiques">
+                        <p>
+                            Je remercie de tout cœur Gisèle pour tout ce qu'elle m'a apporté durant ces 4 dernières années.
+                            Elle a été d'un aide et d'un soutien inestimable pour ma préparation de mariage et pour mon suivi 
+                            psychologique jusque là.
+                            Grande stressée et en manque de confiance, elle a su me rebooster et trouver la bonne thérapie 
+                            pour que je me sente forte et avoir toutes les cartes en main pour aller de l'avant.
+                            Elle arrive à trouver tout le positif en nous et même des qualités insoupçonnées …qui sont de réels atouts.
+                            ALLEZ Y LES YEUX FERMÉS
+                            De plus son nouveau cabinet de mont de marsan respire la zenitude. Un vrai petit jardin d'éden 
+                            dans lequel on se sent bien.
+                            Encore merci Gisèle !! <br><br>
+                            Edith
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis02.webp" alt="Fleur violette">
+                        <p>
+                            Voilà bientôt 3 ans que j'ai rencontré Gisèle Nicoletti, c'est une personne rassurante,
+                            accompagnante, exceptionnelle et surtout qui m'a tout d'abord aidé alors que 
+                            je traversé une période difficile professionnellement et personnellement. 
+                            Elle a su me redonner confiance et m'a permis de me lancer dans une reconversion professionnelle réussie. 
+                            Aujourd'hui, elle a su me coacher dans mes projets professionnels, elle sait me guider, me soutenir, 
+                            me conseiller, me donner des outils pour me rediriger si je fais mauvaise route. 
+                            Ces messages me donnent toujours un élan de positivisme, ils sont attentionnés et plein 
+                            d'espoir de croire qu' il faut toujours croire en nous et ne rien lâcher !!! 
+                            Une personne de totale confiance et surtout une très belle rencontre qui a changé le cours de ma vie. 
+                            Un cabinet au top. Merci encore Mme Nicoletti pour votre accompagnement. <br><br>
+                            Sophie
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis03.webp" alt="Une sucette pour bébé">
+                        <p>
+                            Gisèle est une personne formidable qui en quelques séances, grâce à une thérapie psycho corporelle, 
+                            m'a aidée à concrétiser mon projet de grossesse, alors que je rencontrais des difficultés 
+                            depuis plusieurs mois. Son soutien bienveillant, son écoute attentive, son empathie, ses conseils 
+                            rassurants m'ont permis de traverser les moments de doute et de découragement plus sereinement et de 
+                            poursuivre le chemin avec plein d'énergie positive. Je suis aujourd'hui comblée par un petit 
+                            garçon de 2 mois en pleine forme qui fait notre bonheur ! On se sent comme dans un cocon dans ce beau cabinet, 
+                            je viens la consulter avec beaucoup de plaisir ! <br><br>
+                            Émilie
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis04.webp" alt="Pieds de bébé">
+                        <p>
+                            J'ai commencé à consulter Gisèle pour des problèmes de confiance en soi mais surtout car cela 
+                            faisait plus d'un an que j'essayais d'avoir un enfant, en vain. Donc j'ai tenté le tout pour le 
+                            tout et en complément du parcours en médecine "classique" nous avons travaillé en acupuncture 
+                            mais également sur le psycho. Aussi étrange que cela puisse paraître, arrivée aux portes d'un parcours PMA, 
+                            et très exactement 9 mois après le début du travail avec Gisèle, mon petit combattant s'…est installé 
+                            et nous comble de bonheur depuis presque 2 mois. ^^ Tout cela pour dire que vous pouvez 
+                            y aller les yeux fermés ! Gisèle est une personne solaire, rayonnant par sa gentillesse, 
+                            par sa présence (même par téléphone, en dehors de ses consultations ) pour ses patients et 
+                            qui a toujours les mots qu'il faut pour re donner le coup de boost qui va bien 
+                            dans les moments plus compliqués. Merci Gisèle d'être vous! 🙏🏼🍀
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis05.webp" alt="Une cygogne qui porte un bébé dans son bec">
+                        <p>
+                            Durant 1 an j'ai bénéficié de l'accompagnement de Gisèle pour m'aider à surmonter la perte 
+                            de ma première fille. C'est une personne extraordinaire qui a su m'écouter, m'épauler, me soutenir 
+                            et me guider. Elle a grandement contribué au fait qu'aujourd'hui, je crois de nouveau en l'avenir 
+                            et en la vie. Notre travail et nos échanges réguliers m'ont permis de tomber de nouveau enceinte 7 mois 
+                            après le début de son accompagnement. Sans elle, sans ses mots et ses méthodes, mon évolution 
+                            aurait été beaucoup plus lente et douloureuse. C'est mon 2ème ange gardien, je la recommande à 
+                            toutes et tous. <br><br>
+                            Caroline
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis06.webp" alt="Fleur de lotus">
+                        <p>
+                            Gisèle est une professionnelle hors du commun. À l’écoute, attentionnée, très agréable et compétente, 
+                            elle est une personne en qui il est possible d’avoir une totale confiance. Tant sur le plan professionnel 
+                            que personnel.
+                            Je recommande son accompagnement. Si elle n’existait pas, il aurait fallu l’inventer !! <br><br>
+                            Rémy
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis07.webp" alt="Fleur jaune">
+                        <p>
+                            Gisèle est une superbe professionnelle qui maîtrise de nombreuses techniques permettant de solutionner 
+                            tous les petits problèmes que vous rencontrez dans l'existence. c'est une véritable "faiseuse de miracle" 
+                            qui vous redonne la joie de vivre !!! <br><br>
+                            Pascal
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis08.webp" alt="Fleur jaune">
+                        <p>
+                            Gisèle est une véritable magicienne!!
+                            Cela fait trois ans que je la consulte j’ai donc aujourd’hui le recul nécessaire pour laisser un commentaire.
+                            Elle m’a soigné mon système digestif qu’aucun médecin n’arrivait à me soulager, aujourd’hui je n’ai 
+                            plus aucune douleur, plus de problème pour manger, pour digérer plus de migraine Digestive
+                            c’est d’ailleurs la seule qui a Trouver de quoi provenait toutes ces douleurs
+                            Les céphalées de tension que n’y le médecin n’y la kine arrivai…ent à me soigner, gisèle me les a 
+                            fait disparaître en deux séances
+                            Mon mari a de l’arthrose déformante aux mains il n’arrivait même plus à ouvrir une bouteille d’eau
+                            Grâce a Gisèle il revit ne prends plus d’anti-inflammatoires tous les matins , la douleur a disparu 
+                            même la déformation n’est plus aussi importante.
+                            Toutes les personnes à qui J’ai recommandé Gisèle en sont ravis et les retours sont les mêmes
+                            c’est une personne bienveillante à l’écoute De tous nos mots et nos maux
+                            Je la recommande sans hésiter Gisèle est une belle âme avec de la magie dans les mains <br><br>
+                            Gaëlle
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis09.webp" alt="Fleurs de cerisier">
+                        <p>
+                            Toujours à l'écoute, sans jugement, Gisèle est une aide très précieuse quand la vie nous malmène! 
+                            Avec son accueil chaleureux et différentes approches de thérapie, elle nous redonne espoir,sourire et confiance , 
+                            là où il n'y avait plus rien... Elle est un vrai rayon de soleil! N'hésitez pas à aller la consulter! <br><br>
+                            Valotéa
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis10.webp" alt="Ciel gris">
+                        <p>
+                            Très bonne professionnelle, très à l’écoute, très agréable, et surtout très souriante et compétente. 
+                            Je recommande vivement <br><br>
+                            Emilie
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis11.webp" alt="Paysage zen avec empilement de galets">
+                        <p>
+                            Gisèle est une femme extra. La thérapie psycho-corporelle est la clé du bonheur. 
+                            Elle est toujours à l'écoute, cherche des solutions pour que vous soyez bien et POSITIF!!!
+                            Grâce à elle, j'ai réussi à être "mieux dans ma tête", j'ai perdu du poids et obtenu l'an 
+                            dernier mon CAP petite enfance sans stresser!
+                            Le shiatsu est aussi très relaxant.
+                            Je conseille à tout le monde d'aller la voir à Mugron dans la campagne des Landes, vous ne serez pas déçu!
+                            Merci pour tout Gisèle!!! … <br><br>
+                            Delphine
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis12.webp" alt="Paysage avec ciel bleu">
+                        <p>
+                            Gisèle est LA personne à rencontrer !!
+                            Merci pour tout votre soutient, votre aide, votre sourire ! Un vrai bonheur !
+                            Mon fil rouge pour ma nouvelle vie !
+                            À très vite 😉 <br><br>
+                            Audrey
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis13.webp" alt="Fleur">
+                        <p>
+                            Gisèle est une personne formidable, très professionnelle et a l'écoute. Elle fait de véritables miracle. 
+                            Je l'a recommande les yeux fermés <br><br>
+                            Eva
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis14.webp" alt="Fleur rose">
+                        <p>
+                            Ma rencontre avec Gisèle a simplement changé ma vie, sans exagérer! Une personne comme il 
+                            s’en fait trop peu! Très pro et en m temps tellement sympathique que l’on est à l’aise immédiatement! 
+                            Beaucoup de professionnalisme en tte simplicité! Voilà ce que j’adore! A l’écoute sans jugement, 
+                            les conseils les plus adaptés qu’ils soient car applicables! Dans ce lieux lumineux, accessible et 
+                            bien situé je me suis tout de suite sentie comme dans un cocon prête à m’ouvrir sans complex…e pour une fois! 
+                            Pas de pression de temps la séance dure le temps qu’elle doit durer, je ne vois jamais le temps passer... 
+                            un coup de « mou » entre 2 séances ? Pas de problème un petit sms à Gisèle et sa réponse vous reboost 
+                            immédiatement! C’est d’ailleurs ce que je ressens à chaque fois que je quitte une séance.
+                            Quoi qu’il arrive on a l’impression que Gisèle est la pour nous! ✨🙏
+                            Merci <br><br>
+                            CaRo
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis15.webp" alt="Paysage avec une statue japonaise">
+                        <p>
+                            des séances extraordinaires, impressionnantes....
+                            cela sans m'en rendre compte me permets de me comprendre, de m'apprecier, de découvrir et d'interpréter 
+                            mes différentes facettes encore inconnues, certains blocages, certaines peurs, et de réaliser 
+                            les differents comportements de mon entourage ..... <br><br>
+                            Amélie
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis16.webp" alt="Paysage avec arc en ciel">
+                        <p>
+                            Je recommande vivement Gisèle,c'st une personne à l'écoute et qui trouve de vrai solution pour avancé dans la vie.
+                            Elle ma bien aidé donc pas de doute passé le cap meme si se n'est pas facile.Encore un grand merci. <br><br>
+                            Mickael
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis17.webp" alt="Fleur exotique">
+                        <p>
+                            Gisèle propose certes, différentes approches thérapeutiques et se donne à fond, sans compter son temps pour ses patients. 
+                            Mais au delà de la professionnelle c'est une personne d'une valeur inestimable, qui a des valeurs profondes, un cœur en or! 
+                            C'est une vraie amie!🤩 <br><br>
+                            Lydie
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis18.webp" alt="Etendue de sable">
+                        <p>
+                            Gisèle est une femme exceptionnelle qui saura quoi qu'il arrive vous aider à avancer dans votre vie et vos projets. 
+                            N hésitez pas, allez la voir si vous en ressentez le besoin. <br><br>
+                            So Pio
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis19.webp" alt="Fleur exotique">
+                        <p>
+                            ✨Superbe cabinet, facile d’accès,on se sent à la maison...avec une belle vue sur le jardin.🌺🌼
+                            Gisèle est une psychothérapeute extraordinaire qui vous donne des outils pour avancer et qui m’a permis 
+                            de ne pas sombrer. Les changements que je pensais insurmontables deviennent presque magnifiques à la fin...
+                            Grâce à son coaching on tourne la page plus rapidement, on arrive même à croire que des jours 
+                            meilleurs nous attendent.🙏✨ <br><br>
+                            Fabienne
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis20.webp" alt="Fleur exotique">
+                        <p>
+                            J’ai fais le soin soleil levant, Gisèle a été très aimable et à l’écoute, elle a des mains de fées!! 
+                            Je recommande vivement j’ai passé un excellent moment. <br><br>
+                            Alicia
+                        </p>
+                    </div>
+                    <div class="avis-card">
+                        <img src="./img/avis21.webp" alt="Fleur rose">
+                        <p>
+                            Gisèle est une très belle personne, à l'écoute, pleine de conseils, bienveillante, une épaule sur qui compter ... 
+                            Elle vous rebooste en peu de temps et vous donne l'énergie d'avancer 🤩 <br><br>
+                            Julie​
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li><a class="btn--footer btn__main" href="./avis-patients.html">Avis patients</a></li>
+                <li><a class="btn--footer btn__main" href="./foire-aux-questions.html">FAQ</a></li>
+                <li><a class="btn--footer btn__main" href="https://fr-fr.facebook.com/pages/category/Acupuncturist/Cabinet-Somatozen-Gis%C3%A8le-Nicoletti-214626969063825/">Facebook</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

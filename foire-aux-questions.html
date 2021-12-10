@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Somatozen - foire aux questions</title>
+        <meta name="description" content="Besoin d'un renseignement, consultez notre foire aux questions ">
+        <script src="./index.js" async></script>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" /> 
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__img" title="Retour à l'accueil"><img src="./img/logo.webp" alt="Le logo du cabinet Somatozen"></a>
+            <nav class="header__nav">
+                <a class="btn__nav btn--nav" title="Prestations" href="./index.html#prestations">Prestations</a>
+                <a class="btn__nav btn--nav" title="Thérapeute" href="./index.html#profil">Thérapeute</a>
+                <a class="btn__nav btn--nav" title="Contact" href="contact.html#me-contacter">Contact</a>
+            </nav>
+        </header>
+        <div class="banner">
+            <h1 class="banner__title">J'ai décidé d'être heureux parce que c'est bon pour la santé - Voltaire</h1>
+            <img class="banner__img" src="./img/bannièreV1.png" alt="Etendue d'eau avec des galets alignés">
+        </div>
+        <main>
+            <button id="scroll-btn" class="btn__scroll btn--scroll" title="Haut de la page">&#11014;</button>
+            <section class="section-faq">
+                <h2 class="section-faq__title">Foire aux questions</h2>
+                <div class="section-faq__content">
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq1">Les jours et les horaires du cabinet</label>
+                        <input id="faq1" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">Du Lundi au samedi inclus de 9h30 à 19h30 uniquement sur rendez-vous</div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq2">Comment prendre rendez-vous ?</label>
+                        <input id="faq2" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <ol>
+                                <li>Par téléphone au 07 83 78 01 37</li>
+                                <li>par mail à somatozen@gmail.com</li>
+                                <li>par l'onglet <a href="./contact.html">Contact</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq3">Comment se déroule une consultation de thérapie brève ?</label>
+                        <input id="faq3" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            La plupart du temps en posture assise ou semi allongée selon les techniques, guidé et accompagné par la thérapeute,<br>
+                            vous serez confortablement installé dans un climat sécurisant. <br> ​
+                            La séance s'organise en général en plusieurs temps: ​<br>
+                            <ul>
+                                <li>un temps d'échange entre la thérapeute et vous</li>
+                                <li>un temps d'exercice pratique spécifique à votre problématique</li>
+                                <li>un temps de relaxation psycho corporelle (relaxation détente en fauteuil/ sophrologie/méditation guidée)</li>
+                                <li>un temps d'intégration de l'exercice</li>
+                            </ul>
+                            Chaque séance est différente car elle s'adapte à l'individu et à sa problématique du jour.
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq4">Comment se déroule une consultation de médecine chinoise</label>
+                        <input id="faq4" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>
+                                Tout commence par un bilan complet. <br>
+                                Ce bilan se fait en 4 étapes : <br>
+                            </p>
+                            <ol>
+                                <li>L’entretien : le praticien se renseigne sur la vie du patient, sur ses symptômes, sur ses maladies antérieures,
+                                     et lui demande le diagnostic fait par son médecin ainsi que les comptes rendus médicaux de ses examens.
+                                </li>
+                                <li>L’observation (teint, attitude, bouche, yeux, etc.)</li>
+                                <li>L’écoute (son de la voix, respiration, etc.)</li>
+                                <li>La palpation : prise de pouls complète, recherche de zones du corps anormalement froides ou chaudes.</li>
+                            </ol>
+                            <p>
+                                A l’issue de ce bilan énergétique, un massage tui na ou une séance d’acupuncture douce 
+                                et non invasive (sans aiguilles) sont généralement réalisés dans la foulée. 
+                                Le praticien pourra également proposer un conseil de régime alimentaire adapté ou un complément
+                                à base de plantes que vous trouverez en vente libre en pharmacie
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq5">Ai-je besoin d'un courrier de mon généraliste ?</label>
+                        <input id="faq5" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>
+                                Un courrier de votre généraliste n'est pas obligatoire pour venir.
+                                Néanmoins, votre généraliste peut vous envoyer voir un psychothérapeute ou un praticien de 
+                                médecine chinoise avec un courrier indiquant son diagnostic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq6">Combien de séance me faudra t'il ?</label>
+                        <input id="faq6" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>Cela est variable en fonction de chaque patient, du type de thérapie et de l'importance de la situation</p>
+                            <ul>
+                                <li>Une séance peut déjà aider à soulager une crise</li>
+                                <li>En prévention il est conseiller de venir deux fois par an, à chaque changement d'heure (heure été/hiver)</li>
+                                <li>Une séance tous les deux mois assure un bon entretien</li>
+                                <li>Pour certaines pathologies, entre 5 et 10 séances peuvent s'avèrer nécessaires</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq7">Tarif et possibilité de remboursements</label>
+                        <input id="faq7" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>
+                                Une séance dure en moyenne entre 1h00 et 1h30 <br>
+                                ​Elle coûte 60 €. <br>
+                                Si votre mutuelle prend en charge une partie de ce type de séance, <br>
+                                une facture vous sera remise sur demande. <br><br>
+    ​                            Remboursements des consultations <br><br>
+    ​                            Actuellement, les Français se tournent de plus en plus vers des soins de médecine alternative,
+                                qui s’apparentent à des compléments de santé de qualité. Ces médecines complémentaires tendent
+                                à se professionnaliser et certaines d’entre elles sont déjà reconnues par le corps médical.<br>
+                                Si le thérapeute n’est pas Généraliste, la consultation ainsi que les traitements prescrits 
+                                restent entièrement à la charge du consultant. Pour les aider à faire face à ces frais 
+                                devenus indispensables à leur bien-être, certaines mutuelles et assurances santé apportent 
+                                aujourd’hui un complément de remboursement, qui varie de 75 à 350€/an.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq8">Suis-je remboursais des séances de médecine chinoise ?</label>
+                        <input id="faq8" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>
+                                Une séance de médecine chinoise au cabinet Somatozen vous coûtera 60€. (pour 1 heure 15 environ). <br>
+                                Vous n’obtiendrez aucun remboursement de la Sécurité Sociale, sauf pour une séance d’acupuncture 
+                                pratiquée par un médecin-acupuncteur et qui a été prescrite sur ordonnance. 
+                                Dans ce cas, vous obtiendrez le remboursement d’une consultation classique 
+                                de médecin généraliste (70% par la Sécu, puis le complément de la mutuelle en fonction de vos garanties). <br><br>
+                                De même, le remboursement mutuelle est loin d’être automatique. Les séances d’acupuncture sont 
+                                généralement remboursées : il suffit de vous référer à la ligne « Médecine Générale » de votre 
+                                tableau de garanties si vous faites appel à un Généraliste pratiquant également de l'acupuncture. 
+                                Si ce n’est pas le cas, référez-vous à la ligne « Médecine Douce ». 
+                                De nombreuses mutuelles proposent un forfait annuel ou par acte. <br>
+                                Il est par contre plus rare que les autres branches de la médecine chinoise soient remboursées.
+                                Regardez attentivement vos garanties en Médecine Douce : certaines mutuelles y englobent plus de pratiques que d’autres
+                            </p>
+                            <ul>
+                                <li>l'acupuncture</li>
+                                <li>la moxibustion</li>
+                                <li>la réflexologie plantaire</li>
+                                <li>l'auriculothérapie</li>
+                                <li>la pharmacopée (les plantes)</li>
+                                <li>les ventouses</li>
+                                <li>la massothérapie shiatsu ou Tui Na</li>
+                            </ul>
+                            <p>
+                                Comme elle tient compte des multiples facettes d’une personne (ses maux physiques, ses émotions, son histoire...),
+                                la MTC permet aussi bien soulager l’anxiété, l’angoisse, les difficultés de sommeil, 
+                                que des douleurs physiques tels que maux de ventre, migraines, douleurs musculaires ou articulaires, etc
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq9">Que permet de soulager la médecine chinoise ?</label>
+                        <input id="faq9" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>
+                                La MTC permet aussi bien soulager l’anxiété, l’angoisse, 
+                                les difficultés de sommeil que des douleurs physiques tels que maux de ventre, migraines, 
+                                douleurs musculaires ou articulaires, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <label class="faq-item__label" for="faq10">Quels proféssionnels pratiquent la médecine chinoise ?</label>
+                        <input id="faq10" type="radio" name="faq" class="faq-item__input">
+                        <div class="faq-item__content">
+                            <p>
+                                La médecine chinoise n’est pas reconnue officiellement en France même si elle l'est 
+                                par l'organisation mondiale de la santé (l'OMS). Ce qui explique qu'il soit possible 
+                                de consulter un acupuncteur qui n'est pas médecin généraliste. <br>
+                                Il est possible de trouver des médecins généralistes qui ont suivi une formation 
+                                complémentaire en acupuncture (reconnue par l’État), mais Ils sont peu nombreux et 
+                                il est parfois difficile d'en trouver un près de chez vous. <br>
+                                Les praticiens de médecine traditionnelle chinoise (non généralistes) n'en sont pas moins 
+                                professionnels et rigoureux car ils ont suivi une formation théorique et pratique de 5 ans 
+                                dans une école de médecine chinoise agrée par la fédération de médecine chinoise,
+                                Cette école qui les a formé, respecte les critères de formation et a signé une charte 
+                                d’éthique et de déontologie. <br>
+                                Les praticiens issus de ces écoles ont présenté leur diplôme de fin d'étude à l’issue 
+                                de leurs cinq années de formation et se sont présentés au diplôme national (Français) 
+                                de médecine traditionnelle chinoise le DNMTC. Ils ont suivi des stages en France encadrés 
+                                par le Dr Van Tong de l’hôpital de Pékin et ont effectué leur stage à l'hôpital en Chine pour lequel ils ont reçu un diplôme.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li><a class="btn--footer btn__main" href="./avis-patients.html">Avis patients</a></li>
+                <li><a class="btn--footer btn__main" href="./foire-aux-questions.html">FAQ</a></li>
+                <li><a class="btn--footer btn__main" href="https://fr-fr.facebook.com/pages/category/Acupuncturist/Cabinet-Somatozen-Gis%C3%A8le-Nicoletti-214626969063825/">Facebook</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
