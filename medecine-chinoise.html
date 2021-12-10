@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Somatozen - Médecine Traditionnelle Chinoise à Mont de Marsan</title>
+        <meta name="description" content="Venez essayer la médecine traditionnelle chinoise au cabinet Somatozen de Mont de Marsan (40), vous pourrez ainsi retrouver l'équilibre de votre corps à l'aide de l'acupuncture, la luxopuncture, la diététique chinoise, la pharmacopée et les massages tel que le massage Tui Na">
+        <script src="./index.js" async></script>
+        <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico" /> 
+        <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">-->
+        <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="./index.html" class="header__img" title="Retour à l'accueil"><img src="./img/logo.webp" alt="Le logo du cabinet Somatozen"></a>
+            <nav class="header__nav">
+                <a class="btn__nav btn--nav" title="Prestations" href="./index.html#prestations">Prestations</a>
+                <a class="btn__nav btn--nav" title="Thérapeute" href="./index.html#profil">Thérapeute</a>
+                <a class="btn__nav btn--nav" title="Contact" href="contact.html#me-contacter">Contact</a>
+            </nav>
+        </header>
+        <div class="banner">
+            <h1 class="banner__title">J'ai décidé d'être heureux parce que c'est bon pour la santé - Voltaire</h1>
+            <img class="banner__img" src="./img/bannièreV1.png" alt="Etendue d'eau avec des galets alignés">
+        </div>
+        <main >
+            <button id="scroll-btn" class="btn__scroll btn--scroll" title="Haut de la page">&#11014;</button>
+            <section class="section-prestations">
+                <h2 class="section-prestations__title">Médecine chinoise</h2>
+                <p class="section-prestations__text">Les consultations en médecine chinoise : 60€ durée 1H15 <br>
+                Les séances en fauteuil massant : 30€ durée 30min
+                </p>
+                <div class="section-prestations__content">
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise01.png" alt="Un paysage zen avec des galets">
+                        <div class="card__content">
+                            <h3 class="content-title">La Médecine Traditionnelle Chinoise (MTC)</h3>
+                            <p class="content-text">
+                                C'est un système médical complet et éprouvé depuis des millénaires, basé sur l’énergie de la vitalité et l'équilibre du corps. <br> 
+                                L'<strong>acupuncture</strong> en est la pratique la plus connue en occident, 
+                                mais elle ne représente en réalité qu'une petite partie de la médecine traditionnelle chinoise. 
+                                En France nous avons l'habitude d'utiliser les services de santé lorsque c'est un peu tard et 
+                                que nous sommes déjà malade (même si de plus en plus de campagnes sanitaires sont menées vers la prévention). <br>
+                                L’état d'esprit en Chine est un peu différent, les chinois font attention à leur alimentation, 
+                                font de la gym douce et se font régulièrement masser AVANT, justement pour se préserver en bonne santé 
+                                mais aussi afin de se délester rapidement des effets indésirables des "attaquants" qu'ils sont amenés
+                                à rencontrer dans leur vie (chocs physiques et émotionnels) et qui peuvent à long terme entrainer douleurs et souffrances.
+                            </p>
+                            <a  class="btn__main btn--main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card card-reverse">
+                        <img class="card__img" src="./img/medecine-chinoise13.png" alt="Plantes médecinales séchées">
+                        <div class="card__content">
+                            <h3 class="content-title">La Médecine chinoise devrait être avant tout de la prévention, de l'entretien de soi pour rester en bonne santé</h3>
+                            <p class="content-text">
+                                Prendre soin de soi avant afin que les maladies ne trouvent pas la place de s'y installer. <br>
+                                Dans l'idéal il faudrait faire une séance de <strong>massothérapie</strong> complète <strong>shiatsu</strong> / <strong>Tui Na</strong> 
+                                à chaque changement de saison ou au moins à chaque grande période de changement d'heure (printemps et automne), 
+                                soit 2 à 4 fois dans l'année en prévention. <br>
+                                Vous en aurez pour 100 à 200 euros sur l'année mais vous ne les regretterez pas, en quelque sorte le passage
+                                de votre véhicule corporel au contrôle technique. <br>
+                                Petite anecdote amusante : dans la Chine ancienne, le médecin chinois n’était payé que quand ses patients 
+                                restaient en bonne santé grâce en grande partie au suivi de ses bons conseils.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise14.png" alt="Une praticienne ptratiquant l'acupuncture">
+                        <div class="card__content">
+                            <h3 class="content-title">La médecine chinoise, qu’est-ce que c’est ?</h3>
+                            <p class="content-text">
+                                Il est tout d’abord important de comprendre que la médecine chinoise ne fait pas de différence entre le corps et l’esprit. <br> 
+                                l’homme est un tout corps et esprit et un équilibre doit être trouvé, faute de quoi le corps enverra des signaux : les symptômes. <br>
+                                Cette notion nous l'avions aussi dans notre passé occidental : c'est ce que nos grecs appelaient un <strong>esprit sain</strong> dans un <strong>corps sain</strong> (Mens sana in corpore sano).
+                                repris par Pierre de Coubertin début 1900 avec "un esprit ardant dans un corps musclé". <br>
+                                Afin de rétablir cet équilibre, la médecine chinoise propose 4 grandes  méthodes à savoir la pharmacopée, l'acupuncture, la diététique, le massage Tui Na.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card card-reverse">
+                        <img class="card__img" src="./img/massage_pierre.png" alt="Une praticienne pratiquant un massage au pierres chaudes">
+                        <div class="card__content">
+                            <h3 class="content-title">A qui s'adresse la médecine chinoise ?</h3>
+                            <p class="content-text">
+                                En théorie, la médecine chinoise peut être testée par tous les patients, 
+                                quel que soit le « mal » en question sauf par exemple dans le cas de cancer ou si vous portez un pacemaker. <br>
+                                Elle est néanmoins particulièrement recommandée dans certains cas : 
+                            </p>
+                            <ul class="content-text">
+                                <li>maladies et infections des voies respiratoires (sinusite, asthme bronchique, etc.)</li>
+                                <li>maladies du système digestif (constipation, diarrhée, digestion lente, brûlures d'estomac)</li>
+                                <li>difficultés à mettre en route un bébé, problèmes de règles,ménopause</li>
+                                <li>maladies musculaires et osseuses (arthrose, sciatique, maux de dos, crampes)</li>
+                                <li>maux de tête, vertiges</li>
+                                <li>acouphènes</li>
+                                <li>pipi au lit chez les enfants (énurésie)</li>
+                            </ul>
+                            <p class="content-info">
+                                Important : Si vous êtes enceintes vous pouvez faire de la massothérapie ou de l'acupuncture 
+                                cependant certains points d'acupuncture et huiles essentielles ne seront pas utilisés pendant 
+                                la grossesse il est donc important si votre grossesse 
+                                ne se voit pas encore de le préciser à la praticienne.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise15.png" alt="Une praticienne pratiquant un massage des pieds">
+                        <div class="card__content">
+                            <h3 class="content-title">Comment ça marche ?</h3>
+                            <p class="content-text">
+                                Comme c'est une Médecine qui considère l’individu comme un tout, au-delà des symptômes,
+                                elle vise à retrouver l'équilibre du  corps pour fluidifier la circulation de l’énergie vitale. <br><br>
+                                Pour cela elle utilise ses cinq thérapeutiques : l’acupuncture, la diététique chinoise, la pharmacopée 
+                                (plantes médicinales), le Qi Gong (exercices énergétiques) et les massages tel que le massage Tui Na (énergisant et dynamisant). <br><br>
+                                Les massages thérapeutiques / appelés aussi  thérapies manuelles énergétiques relancent et régulent la circulation du sang 
+                                et des liquides organiques tels que le Shiatsu, le Anma et le Tui Na. <br><br>
+                                Tout savoir sur la médecine chinoise et son remboursement <br>
+                                Exportée en occident dans les années 1950, la médecine chinoise est en fait vieille de plus de 2500 ans. Proposant une vision différente de l’homme et de la maladie, cette médecine « alternative » suscite une curiosité grandissante, tout autant qu’elle fait face à un certain scepticisme.
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card card-reverse">
+                        <img class="card__img" src="./img/medecine-chinoise06.png" alt="Plantes et préparations médecinales">
+                        <div class="card__content">
+                            <h3 class="content-title">La pharmacopée (ou phytothérapie)</h3>
+                            <p class="content-text">
+                                Elle consiste à prendre des herbes médicinales ou des compléments alimentaires à base de plantes.
+                                De nombreuses substances naturelles (feuilles, racine, graines, fleurs et écorce) sont ainsi utilisées. 
+                            </p>
+                            <p class="content-info">
+                                Important: si vous avez un traitement donné par votre généraliste ou un spécialiste vous le conserverez.
+                                Si quelque chose ne vous va pas dans le traitement qu'il vous a donné c'est à vous de lui en parler
+                                L'acupuncture vient en complément de vos traitements mais ne remplace pas votre généraliste. <br> 
+                                Au cabinet Somatozen votre acupuncteur ne sera jamais votre médecin traitant.il ne faut pas confondre 
+                                la Médecine Chinoise et la Médecine Conventionnelle.
+                            </p>
+                            <p class="content-text">
+                                Le Praticien de Médecine Chinoise ne réalise pas de diagnostic médical, ni n'émet d'avis critique 
+                                sur les prescriptions médicales de votre médecin. Un traitement médicamenteux se doit d'être respecté. <br><br>
+                                C'est votre Médecin traitant ou le Spécialiste que vous avez consulté qui décidera de l'arrêt ou du changement de votre traitement.
+                                Les soins traditionnels chinois sont pleinement complémentaires et n'interfèrent en aucun cas avec la prise des médicaments.
+                                Au cabinet Somatozen la praticienne en médecine traditionnelle chinoise s'appuie sur le diagnostic 
+                                que vous lui communiquez qui a déjà été fait  par des spécialistes du secteur médical, 
+                                c'est pourquoi il vous sera demandé de venir avec vos résultats de prise de sang
+                                Si vous en avez et vos comptes rendus médicaux de radiologie, d'IRM, de scanner etc.. <br>
+                                S'il lui semble que cela s'avère nécessaire elle n'hésitera pas à vous orienter vers des spécialistes 
+                                hospitaliers ou vous demandera de revoir cela avec votre médecin traitant ou 
+                                pour des examens complémentaires (exemple radio, échographie ou autre)
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise07.png" alt="Une praticienne ptratiquant l'acupuncture">
+                        <div class="card__content">
+                            <h3 class="content-title">L’acupuncture</h3>
+                            <p class="content-text">
+                                Il s’agit de la pratique la plus connue en France de la médecine chinoise. <br>
+                                Elle consiste à planter des aiguilles très fines sur une partie ciblée du corps, 
+                                le but étant de produire des effets positifs sur celui-ci. Elle peut être groupée dans certains cas 
+                                à la moxibustion (moxas) et complémentaire aux ventouses, digipuncture, acupressure. <br><br>
+                                Vous avez peur des aiguilles ? <br>
+                                Alors venez essayer la Luxopuncture. 
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card card-reverse">
+                        <img class="card__img" src="./img/medecine-chinoise11.png" alt="Une praticienne ptratiquant la luxopuncture">
+                        <div class="card__content">
+                            <h3 class="content-title">La luxopuncture</h3>
+                            <p class="content-text">
+                                La luxothérapie reproduit l’action des aiguilles à l’aide d’un faisceau laser. 
+                                Il n’y a plus d’effraction, le nœud énergétique va être solliciter non pas sous l’action d’une aiguille 
+                                mais par un rayonnement infrarouge qui va produire une stimulation. <br>
+                                <a href="https://www.youtube.com/watch?v=4K0r81fpaww">Une démonstration en video sur ce lien</a> <br>
+                                Ces applications thérapeutiques sont nombreuses : <br>
+                            </p>
+                            <ul class="content-text">
+                                <li>Accompagnement et arrêt du tabac</li>
+                                <li>Permet de diminuer le poids</li>
+                                <li>Offre un bienfait à la peau du visage</li>
+                                <li>Un état de bien-être, de relaxation</li>
+                                <li>Rééquilibrage alimentaire pour combattre le surpoids</li>
+                                <li>Troubles du sommeil</li>
+                                <li>Bien être ménopause</li>
+                                <li>Combattre les bouffées de chaleur</li>
+                            </ul>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise08.png" alt="Assortiments de fruits et légumes">
+                        <div class="card__content">
+                            <h3 class="content-title">La diététique</h3>
+                            <p class="content-text">
+                                La diététique propose un régime alimentaire adapté à chacun selon sa situation. <br>
+                                Les aliments sont classés (selon leur couleur, leur action, leur saveur, et leur nature) 
+                                en deux grandes catégories : <br> les aliments Yin et les aliments Yang.
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card card-reverse">
+                        <img class="card__img" src="./img/massage.png" alt="Une personne qui se fait masser">
+                        <div class="card__content">
+                            <h3 class="content-title">Le massage Tui Na</h3>
+                            <p class="content-text">
+                                Le Tui Na est le massage thérapeutique en Chine. <br> Il est très technique et nécessite 
+                                une réelle connaissance de l’anatomie et des principes de médecine chinoise, d'où plusieurs années d’études. 
+                                Il est considéré comme le massage traditionnel, mais il existe beaucoup d’autres formes de massages chinois 
+                                qui sont plus proches de massages de confort ou de relaxation. <br> 
+                                Cependant, ils travaillent moins en profondeur donc sur les énergies du corps. <br><br>
+                                Comment se déroule un massage ? <br><br>
+                                Le massage Tui Na est effectué dans une cabine individuelle et fermée, sur une table de massage professionnelle. 
+                                La séance commence par le dos, le masseur repère les zones de tension par un pétrissage du dos 
+                                et de la nuque puis dénoue les nœuds un par un avec un massage en profondeur. <br>
+                                Il enchaîne ensuite par la stimulation des points énergétiques pour rétablir la circulation dans les méridiens. 
+                                La dernière partie du massage s'effectue sur les jambes, les pieds et enfin la tête et les bras.
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise09.png" alt="Une praticienne pratiquant un massage shiatsu">
+                        <div class="card__content">
+                            <h3 class="content-title">Le Shiatsu</h3>
+                            <p class="content-text">
+                                ​Le Shiatsu, qui signifie en japonais pression (Atsu) des doigts (Shi), 
+                                utilise la pression par le toucher afin de stimuler de nombreux points d'acupuncture 
+                                sur l’ensemble des méridiens du corps. <br><br>
+                                Elle permet de soulager rapidement et sans médicament les personnes atteintes 
+                                de troubles divers (douleurs musculaires, articulaires, troubles circulatoires, maux de dos).
+                                Le shiatsu est une thérapie manuelle sans cracking qui soulage par simple travail 
+                                de pression des doigts sur le corps (habillé) du patient.
+                                La thérapie manuelle crânienne (shiatsu crânien) agit quant à elle, plus particulièrement 
+                                sur les migraines et le sommeil. <br><br>
+                                Cette méthode est plus connue sous le nom d'acupuncture sans aiguille (acupressure, digiponcture)
+                                Le terme  shiatsu  est le plus  souvent traduit, 
+                                en France par "ostéopathie Japonaise" ou Thérapie Manuelle,
+                                dans les pays francophones par Massothérapie. <br><br>
+                                Reconnue en France par le ministère de l'emploi sous le titre de Praticien spécialiste en  
+                                shiatsu  elle peut être remboursée par certaines mutuelles.
+                                Au japon c'est une véritable médecine (qui s'inspire à la fois de de l'acupuncture et du massage 
+                                thérapeutique)  reconnue  depuis 1920 pour soigner de nombreux troubles. <br><br>
+                                Comme elle ne dissocie pas le physique du mental, cette thérapie manuelle permet 
+                                un rééquilibrage en profondeur du corps et de l’esprit.
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card card-reverse">
+                        <img class="card__img" src="./img/massage_pierre.png" alt="Une praticienne pratiquant un massage au pierres chaudes">
+                        <div class="card__content">
+                            <h3 class="content-title">Le massage aux pierres chaudes</h3>
+                            <p class="content-text">
+                                D’origine amérindienne et hawaïenne, le massage aux pierres chaudes ou « stone therapy » 
+                                est une technique de massage utilisant des pierres de basalte d’origine volcanique. 
+                                Ces pierres, une fois chauffées, procurent une sensation de bien-être et ont différentes 
+                                vertus thérapeutiques. <br>
+                                Les pierres chaudes sont posées sur les points sensibles voire douloureux du corps tels que le ventre,
+                                le dos, les mains, les pieds et le front. La chaleur irradie le corps et permet de se relaxer totalement.
+                                Les bienfaits du massage aux pierres chaudes sont multiples. Il permet notamment de lâcher prise, 
+                                de détoxifier l’organisme et d’améliorer la circulation sanguine. Plusieurs maladies et certaines 
+                                douleurs sont également traitées grâce à cette technique de massage, dont :
+                            </p>
+                            <ul class="content-text">
+                                <li>L’arthrite</li>
+                                <li>La fibromyalgie</li>
+                                <li>L’insomnie</li>
+                                <li>Les douleurs musculaires</li>
+                                <li>Les maladies liées au stress</li>
+                            </ul>
+                            <p class="content-info">
+                                Important: Les personnes souffrant de diabète, de problèmes respiratoires ou cardiaques doivent 
+                                éviter ce type ce massage. C’est également le cas pour les femmes enceintes.
+                                Par ailleurs, en cas de varices, préférez le massage aux pierres froides.
+                                Si vous êtes sujet à des contre-indications pour le massage aux pierres chaudes, rassurez-vous ! 
+                                Il existe de nombreux autres massages dont vous pouvez bénéficier.
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img class="card__img" src="./img/medecine-chinoise10.png" alt="Une praticienne pratiquant un massage amma">
+                        <div class="card__content">
+                            <h3 class="content-title">Massage assis AMMA</h3>
+                            <p class="content-text">
+                                La séance est menée sur une personne habillée, assise sur une chaise de massage ergonomique afin de 
+                                soulager les tensions du dos, de la nuque, des épaules et des bras. <br>
+                                Un massage sur chaise est une solution anti-stress énergisante et relaxante qui s'offre à 
+                                vous en seulement 30 minutes.
+                            </p>
+                            <a class="btn--main btn__main" href="./contact.html">Prendre un rendez-vous</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="footer__list">
+                <li><a class="btn--footer btn__main" href="./avis-patients.html">Avis patients</a></li>
+                <li><a class="btn--footer btn__main" href="./foire-aux-questions.html">FAQ</a></li>
+                <li><a class="btn--footer btn__main" href="https://fr-fr.facebook.com/pages/category/Acupuncturist/Cabinet-Somatozen-Gis%C3%A8le-Nicoletti-214626969063825/">Facebook</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
